@@ -11,3 +11,79 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+header {
+    display: block;
+    width: 100vw;
+    border-bottom: 1px;
+    text-align: center;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    font-size: 40px;
+    margin: 0;
+}
+
+header ul li {
+    padding: 0 1em 0;
+}
+
+main {
+    min-height: 100vh;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.news, .feedback-form, .about {
+    background-color: aliceblue;
+    border-radius: 1em;
+    padding: 1em;
+    font-size: 18px;
+}
+.feedback-form {
+    margin-bottom: 10px;
+}
+.feedback-form ul {
+    margin: 0;
+    list-style: none;
+}
+.feedback-form ul li {
+    margin-bottom: 1em;
+}
+
+.feedback-form textarea {
+    width: calc(100% - 2em);
+}
+
+.feedback-form textarea,
+.feedback-form input {
+    font-size: 1em;
+}
+
+.feedback-form input[type=text]  {
+    width: 400px;
+}
+
+footer {
+    text-align: center;
+    font-size: 16px;
+    font-weight: bolder;
+    color: gray;
+    background-color: darkgray;
+    padding: 2em;
+}
+
+.error {
+    text-align: center;
+    color: red;
+    font-weight: bold;
+}
+.post {
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 0px 5px;
+    margin-bottom: 10px;
+}
