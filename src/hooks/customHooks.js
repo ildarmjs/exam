@@ -1,4 +1,4 @@
-import  { useState } from 'react'
+import { useState } from 'react'
 
 export const useCustomHook = () => {
 	const [value, setValue] = useState('')
@@ -15,6 +15,7 @@ export const useCustomHook = () => {
 
 	const clickHandler = () => {
 		setError('')
+
 		if (
 			value.trim().length === 0 ||
 			value2.trim().length === 0 ||
@@ -29,9 +30,6 @@ export const useCustomHook = () => {
 			check: checked,
 		}
 		setArray([newPost, ...array])
-		console.log(array)
-		setValue('')
-		setValue2('')
 	}
 
 	const submitHandler = event => {
@@ -70,8 +68,7 @@ export const useCustomHook = () => {
 		changeHandler2,
 		changeHandler3,
 		clickHandler,
-		checked, 
+		checked,
 		array,
-
 	}
 }
